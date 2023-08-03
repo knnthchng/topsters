@@ -1,4 +1,6 @@
-Topsters
+*Topsters*
+
+![image](https://raw.githubusercontent.com/knnthchng/topsters/main/Visuals/topsters_sample.png)
 
 **BACKGROUND**
 ----------------------------------------------------------------------------------------
