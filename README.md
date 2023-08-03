@@ -1,6 +1,6 @@
 *Topsters*
 
-![image](https://raw.githubusercontent.com/knnthchng/topsters/main/Visuals/topsters_sample.png)
+![image](https://raw.githubusercontent.com/knnthchng/topsters/main/Visuals/topsters_sample.jpg)
 
 **BACKGROUND**
 ----------------------------------------------------------------------------------------
@@ -13,7 +13,7 @@ and records of all time.
 ----------------------------------------------------------------------------------------
 The dataset, in .csv format, consists of 200+ albums, with each entry consisting of 
 the album's title, artist, release year, genre, the releasing record label, and the 
-artist's country of origin.
+artist's country of origin. Wikipedia was referenced to verify each album's release year, genre, length, record label, artist's country of origin, and whether or not it is a compilation album.
 
 **ANALYSES**
 ----------------------------------------------------------------------------------------
