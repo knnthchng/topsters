@@ -18,3 +18,13 @@ The albums were originally listed in my personal iTunes library, and album metad
 
 **CONTENTS**
 ----------------------------------------------------------------------------------------
+
+* Data - Folder contains the album data in both CSV and XLSX format
+
+* Reports - Folder will have documents containing the data analyses and conclusions
+
+* Visuals - Folder contains plots generated from the Jupyter notebooks, in JPG and PNG format.
+
+* Jupyter notebooks - Several Jupyter notebooks have been made to run data analyses. The notebooks named with matplotlib or sns at the end focus on the use of those respective Python libraries for visualization.
+
+* Topsters CSV Input.py - This work-in-progress Python script can be used to add new albums to the CSV file in the Data folder.
