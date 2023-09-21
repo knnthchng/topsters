@@ -1,4 +1,4 @@
-TITLE,ARTIST,YEAR,GENRE,LENGTH,LABEL,COUNTRY,COMPILATION?
+TITLE,ARTIST,YEAR,GENRE,LENGTH,LABEL,COUNTRY,COMPILATION
 A Hard Day's Night,The Beatles,1964,Rock,30.15,Parlophone,GBR,N
 A Rush of Blood to the Head,Coldplay,2002,Alternative,54.13,Parlophone,GBR,N
 A Sailor's Guide to Life on Earth,Sturgill Simpson,2016,Country,38.90,Atlantic,USA,N
@@ -210,3 +210,8 @@ Bakesale,Sebadoh,1994,Alternative,41.51,Sub Pop,USA,N
 Hotel California,Eagles,1976,Rock,43.46,Asylum,USA,N
 Yoshimi Battles the Pink Robots,The Flaming Lips,2002,Alternative,47.42,Warner Bros.,USA,N
 Superunkown,Soundgarden,1994,Rock,70.23,A&M,USA,N
+Run the Jewels 2,Run the Jewels,2014,Hip-hop,38.93,Mass Appeal,USA,N
+Run the Jewels 3,Run the Jewels,2016,Hip-Hop,51.60,"Run the Jewels, Inc.",USA,N
+Currents,Tame Impala,2015,Alternative,51.10,Modular,AUS,N
+Lonerism,Tame Impala,2012,Alternative,51.83,Modular,AUS,N
+Run the Jewels 3,Run the Jewels,2016,Hip-Hop,"Hardcore Hip Hop,Political Hip Hop,Experimental Hip Hop","male vocalist,aggressive,boastful,political,energetic,angry,rebellious,conscious,rhythmic,crime,urban,sampling,vulgar,triumphant,technical",51.60,"Run the Jewels, Inc.",USA,N

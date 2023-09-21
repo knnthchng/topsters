@@ -6,9 +6,9 @@
 ----------------------------------------------------------------------------------------
 For the past few months, I have been taking classes in data analytics and visualization, and after learning how to use Python, Pandas, and MatPlotLib, I decided to create and analyze a dataset of my favorite albums of all time, which I have kept a running tally of for the past 8 or so years.
 
-During my adolescence, I became much more interested in exploring popular music after picking up an issue of Q magazine with the cover story of the greatest albums ever as voted by their readers. Such lists from that magazine and other outlets, as well as year-end best-of lists from Q and other publishers, have helped guide my musical explorations, in addition to other discoveries I've made on my own. 
+During my adolescence, I became interested in exploring popular music after picking up an issue of Q magazine with the cover story of the greatest albums ever as voted by their readers. Such lists from that magazine and other outlets, as well as year-end best-of lists from Q and other publishers, have helped guide my musical explorations, in addition to other discoveries I've made on my own. 
 
-With this dataset, I wanted to get a profile of my musical tastes, exploring which years, genres, and countries are predominantly represented in my list, and conversely those which are underrepresented. The resulting analyses can not only provide a profile of my musical tastes, but also identify opportunities to further diversify and round out my musical explorations.
+With this dataset, I wanted to profile my musical tastes, exploring which years, genres, and countries are predominantly represented in my list, and conversely those which are underrepresented. With these analyses, I can also identify opportunities to further diversify and round out my musical explorations, by finding genres, years, or even countries whose music I should seek out next.
 
 **DATASET**
 ----------------------------------------------------------------------------------------
@@ -27,4 +27,15 @@ The albums were originally listed in my personal iTunes library, and album metad
 
 * Jupyter notebooks - Several Jupyter notebooks have been made to run data analyses. The notebooks named with matplotlib or sns at the end focus on the use of those respective Python libraries for visualization.
 
-* Topsters CSV Input.py - This work-in-progress Python script can be used to add new albums to the CSV file in the Data folder.
+* input_form.py - This Python script can be used to add new albums to the CSV file in the Data folder. (Currently troubleshooting an issue where input data gets added to the right of the last row instead of being added as a new row on the bottom)
+
+**"VERSION LOG"**
+----------------------------------------------------------------------------------------
+
+As I kept working on this project, I decided to expand the scope of my analyses by adding more data fields to analyze. The input form and the data files are all marked with version numbers, charting the evolution of my analyses.
+
+* v.1: Initial version of Topsters database. Data surveyed consists of album title, artist, release year, genre, album length, record label, and whether it's a compilation or not.
+
+* v.2: Added data and fields for subgenres and descriptors, based on such data available from RateYourMusic.
+
+* v.3: Added total number of tracks/songs each album contains.

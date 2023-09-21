@@ -1,9 +1,12 @@
-# Topsters CSV Input
+# Topsters CSV Input Form Program
 
-from csv import writer
+import csv
 
 # Initial variable for "input session"
 active = 'y'
+
+# Create function for appending new data to pre-existing CSV file
+# def append_to_csv(file, row):
 
 # Create function for getting inputs
 def db_input():
@@ -28,8 +31,18 @@ def db_input():
     new_entry.append(genre)
 
     print("-------------------------------------------------")
+    
+    subgenre = input("What other genres or subgenres does the album fall under? (Refer to the album's RateYourMusic page and list with commas without spaces after) ")
+    new_entry.append(subgenre)
 
-    length = input("How long is the album (in minutes)? ")
+    print("-------------------------------------------------")
+
+    descriptors = input("List the album's descriptors by referring to the album on RateYourMusic or AllMusic (List with commas, without spaces after) ")
+    new_entry.append(descriptors)
+
+    print("-------------------------------------------------")
+
+    length = input("How long is the album? (In number of minutes, to two decimal places.) ")
     new_entry.append(length)
 
     print("-------------------------------------------------")
@@ -54,34 +67,36 @@ def db_input():
     correct = input("Is the desired input correct? Y/N ")
 
     if correct.lower() == 'y':
-        with open('Data/topsters.csv', 'a') as topsters_db:
-
-            writer_object = writer(topsters_db, delimiter=',')
-
+        with open('Data/topsters_v2.csv', 'a', newline='') as topsters_db:
+            writer_object = csv.writer(topsters_db, delimiter=',')
             writer_object.writerow(new_entry)
-
             topsters_db.close
-        print("-------------------------------------------------")
-
+        print("-------------------------------------------------`")
         repeat = input("Do you wish to enter another album into the database? Y/N ")
         
         if repeat.lower() == 'y':
-            print("-----------------Here we go again----------------")
+            print("""-------------------------------------------------
+Here we go again!
+-------------------------------------------------""")
             new_entry = []
             db_input()
         elif repeat.lower() == 'n':
             print("-------------------------------------------------")
             print("Thank you for using the app!")
             active = 'n'
+            raise SystemExit
 
     elif correct.lower() == 'n':
-        print("---------------Back from the top...-----------------")  
-        new_entry = []
+        print("""-------------------------------------------------
+Back from the top. Please double-check your inputs before hitting ENTER.
+-------------------------------------------------""")  
+        new_entry.clear()
         db_input()
 
 # Display welcome message and instructions
 print("""-------------------------------------------------
 Topsters Input Form
+-------------------------------------------------
 Make sure to double-check Wikipedia, Discogs, RateYourMusic, among other sources to authenticate your inputs.
 -------------------------------------------------""")
 # During the session
